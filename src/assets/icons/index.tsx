@@ -27,6 +27,7 @@ import LineGraphIcon from "./svg/line-graph.svg";
 import InformationIcon from "./svg/information.svg";
 import DashboardIcon from "./svg/menu.svg";
 import GradientLinkIcon from "./svg/gradient-links.svg";
+import ArrowDownBlackIcon from "./svg/arrow-down-black.svg"
 
 export type Flags = "south-africa"
 export type Socials = "instagram" | "twitter" | "facebook" | "youtube"
@@ -37,6 +38,7 @@ export type Icons = "send" | "notification" | "message"
     | "setting" | "clipboard" | "verified" | "link" | "location"
     | "arrow-down" | "calendar" | 'info' | 'arrow-down-bold'
     | "line-graph" | "information" | "dashboard" | "gradient-link"
+    | "arrow-down-black"
     | Flags | Socials;
 
 export interface IconProps {
@@ -108,6 +110,8 @@ export const Icon: React.FC<Pick<IconProps, "name" | "width" | "fill">> = ({ nam
             return <DashboardIcon fill={fill} />
         case "gradient-link":
             return <GradientLinkIcon fill={fill} />
+        case "arrow-down-black":
+            return <ArrowDownBlackIcon fill={fill} />
         default:
             return "";
     }

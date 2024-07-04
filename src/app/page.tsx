@@ -128,7 +128,7 @@ export default function Home() {
                 <DashboardAreaChart />
               </div>
             </div>
-            <div className="bg-[#090909] py-2.5 rounded-[20px] px-[32px] overflow-hidden border border-[#D7DCE11A]">
+            <div className="bg-[#090909] py-2.5 rounded-[20px] px-5 md:px-[32px] overflow-hidden border border-[#D7DCE11A]">
               <div className="flex justify-between items-center">
                 <span className="flex items-center space-x-1.5 py-5 pt-5">
                   <h3 className="text-base">
@@ -153,11 +153,11 @@ export default function Home() {
                 </DropdownMenu>
               </div>
               <div className="py-5 flex flex-col overflow-hidden">
-                {/* <Table /> */}
+                <Table />
                 <Button className="mx-auto bg-[rgba(255, 255, 255, 0.02)] px-[25px] py-2.5 text-white gradient-box border-[1px] border-[#FFFFFF80]">View More</Button>
               </div>
             </div>
-            {/* <div className="bg-[#090909] py-5 rounded-[20px] border border-[#D7DCE11A]">
+            <div className="bg-[#090909] py-5 rounded-[20px] border border-[#D7DCE11A]">
               <span className="flex items-center space-x-2.5 pt-5 px-[48px] py-5">
                 <h3 className="text-base">
                   Top Performing Links
@@ -173,7 +173,7 @@ export default function Home() {
                   </div>
                 ))}
               </div>
-            </div> */}
+            </div>
             <div className="bg-[#090909] py-5 rounded-[20px] border border-[#D7DCE11A]">
               <span className="flex items-center space-x-2.5 pt-5 px-[48px] py-5 mb-[21px]">
                 <h3 className="text-base">
